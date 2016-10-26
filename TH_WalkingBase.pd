@@ -1,4 +1,4 @@
-#N canvas 331 23 950 713 10;
+#N canvas 306 23 950 713 10;
 #X obj 18 19 receive fromGUI;
 #X obj 19 44 route list;
 #X obj 18 117 select 0 1;
@@ -387,7 +387,7 @@
 #X obj 331 204 * 100;
 #X msg 172 546 0.9;
 #X msg 299 169 0.9;
-#N canvas 0 22 786 556 toggles 1;
+#N canvas 0 22 786 556 toggles 0;
 #X obj 284 53 route list;
 #X obj 250 127 sel 0 1;
 #X obj 319 127 sel 0 1;
@@ -424,11 +424,8 @@
 #X connect 13 0 9 0;
 #X restore 678 509 pd toggles;
 #X obj 677 479 r fromGUI;
-#X obj 675 547 s toGUI;
-#X floatatom 746 548 5 0 0 0 - - -, f 5;
-#X msg 615 445 list /ex2 1;
-#X msg 614 415 list /ex3 1;
-#X msg 698 416 list /ex1 1;
+#X obj 678 535 s toGUI;
+#X floatatom 735 536 5 0 0 0 - - -, f 5;
 #X connect 0 0 1 0;
 #X connect 1 0 33 0;
 #X connect 2 1 11 0;
@@ -499,6 +496,3 @@
 #X connect 62 0 64 0;
 #X connect 62 1 65 0;
 #X connect 63 0 62 0;
-#X connect 66 0 62 0;
-#X connect 67 0 62 0;
-#X connect 68 0 62 0;

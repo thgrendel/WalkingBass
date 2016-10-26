@@ -1,0 +1,21 @@
+#N canvas 429 334 598 391 10;
+#X obj 53 31 r fromGUI;
+#X obj 53 53 route list;
+#X obj 53 133 print knopf:;
+#X obj 147 108 print err;
+#X obj 53 75 route /knopf;
+#X obj 85 224 select 0 1;
+#X obj 177 328 s toGUI;
+#X msg 214 248 list /knopfhint image /Users/thomas/Desktop/01-69p.png
+;
+#X msg 43 274 list /knopfhint image /Users/thomas/Desktop/01-69.png
+;
+#X connect 0 0 1 0;
+#X connect 1 0 4 0;
+#X connect 4 0 2 0;
+#X connect 4 0 5 0;
+#X connect 4 1 3 0;
+#X connect 5 0 8 0;
+#X connect 5 1 7 0;
+#X connect 7 0 6 0;
+#X connect 8 0 6 0;

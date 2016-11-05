@@ -1,4 +1,5 @@
 
 *.wav
-
+scratchpad.pd
+.DS_Store
 doublebass/_readme_and_license.txt

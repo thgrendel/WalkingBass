@@ -1,0 +1,18 @@
+#N canvas 146 26 468 320 10;
+#X obj 41 155 next-in-scale;
+#X obj 41 229 print up;
+#X obj 116 229 print down;
+#X msg 18 72 30;
+#X msg 36 95 60 \, 61 \, 65 \, 70;
+#X msg 167 91 2 1 2 1 1 2 1 2 1 2 1 1 dur-up;
+#X msg 186 116 -1 -1 -2 -1 -2 -1 -1 -2 -1 -2 -1 -2 dur-down;
+#X text 181 66 Initialise with an interval list:;
+#X text 191 139 Interval lists begin with c;
+#X text 15 15 Abstraction to show the next tone in a scale. Outputs
+both steps up and down. Input midi note number;
+#X connect 0 0 1 0;
+#X connect 0 1 2 0;
+#X connect 3 0 0 0;
+#X connect 4 0 0 0;
+#X connect 5 0 0 1;
+#X connect 6 0 0 2;

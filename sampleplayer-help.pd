@@ -1,0 +1,15 @@
+#N canvas 319 46 450 300 10;
+#X obj 29 177 sampleplayer doublebass;
+#X msg 23 128 56 \, 58 \, 60;
+#X msg 168 134 90;
+#X obj 30 224 output~;
+#X text 26 20 plays sample in directory that is passed as creation
+argument. Directory needs to contain samples names <n>.wav where <n>
+is the midi note number. Right inlet is a pass-thru for volume.;
+#X text 250 100 Directory: ./doublebass/;
+#X text 331 127 30.wav 31.wav 32.wav 33.wav ...;
+#X connect 0 0 3 0;
+#X connect 0 0 3 1;
+#X connect 0 1 3 2;
+#X connect 1 0 0 0;
+#X connect 2 0 0 1;

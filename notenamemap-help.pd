@@ -1,0 +1,10 @@
+#N canvas 0 22 382 183 10;
+#X obj 14 131 notenamemap;
+#X msg 14 46 30;
+#X msg 25 72 60 \, 61 \, 62 \, 63 \, 65;
+#X obj 14 153 print name;
+#X text 7 10 Abstraction to output the name of the midi note number
+and the octave;
+#X connect 0 0 3 0;
+#X connect 1 0 0 0;
+#X connect 2 0 0 0;

@@ -10,8 +10,8 @@
 #X floatatom 240 234 5 0 0 0 - - -, f 5;
 #X obj 161 255 sel 0 1;
 #X floatatom 235 266 5 0 0 0 - - -, f 5;
-#X obj 181 140 r scale-up;
-#X obj 219 171 r scale-down;
+#X obj 316 33 inlet up;
+#X obj 378 33 inlet down;
 #X connect 0 0 6 0;
 #X connect 0 0 1 0;
 #X connect 1 0 3 1;

@@ -2,30 +2,30 @@
 #X obj 50 190 print intakt;
 #X obj 156 190 print takt;
 #X obj 37 158 beat-and-measure 4;
-#X obj 37 20 bng 15 250 50 0 empty empty beat_it 17 7 0 10 -258113
+#X obj 37 65 bng 15 250 50 0 empty empty beat_it 17 7 0 10 -258113
 -1 -1;
 #X obj 142 250 bluesmap;
 #X obj 142 416 print TSD;
-#X obj 363 92 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
-#X msg 639 147 8;
+#X obj 364 213 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 640 268 8;
 #X obj 883 246 vradio 15 1 0 12 empty empty Scale 0 -8 0 10 -261234
--1 -1 1;
+-1 -1 7;
 #X obj 934 497 v scaleshift;
 #X obj 142 217 + 1;
 #X obj 142 272 t b f;
 #X obj 142 391 v next-chord;
-#X msg 486 122 10 3 3 2 1;
-#X obj 399 147 random-interval;
-#X obj 490 278 v currentnote;
-#X msg 601 147 3;
-#X msg 568 147 5;
-#X msg 515 147 4;
+#X msg 487 243 10 3 3 2 1;
+#X obj 400 268 random-interval;
+#X obj 491 399 v currentnote;
+#X msg 602 268 3;
+#X msg 569 268 5;
+#X msg 516 268 4;
 #X obj 400 692 v currentnote;
 #X obj 400 714 print current;
 #X obj 400 665 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X msg 458 25 \; reset 1;
+#X msg 986 15 \; reset 1;
 #X obj 89 81 r reset;
 #X obj 918 524 notenamemap;
 #X obj 918 552 print scale;
@@ -88,8 +88,8 @@
 -1 -1 1;
 #X obj 502 517 v updown;
 #X obj 572 517 v durmoll;
-#X obj 399 83 r random;
-#X obj 399 105 t b b;
+#X obj 400 204 r random;
+#X obj 400 226 t b b;
 #X obj 76 238 s random;
 #X obj 37 216 sel 0 1;
 #X msg 643 405 4;
@@ -137,9 +137,9 @@
 #X connect 11 1 12 0;
 #X connect 12 0 4 0;
 #X restore 279 358 pd next-chord;
-#X obj 490 197 t f b;
-#X obj 517 221 v currentnote;
-#X obj 490 248 util-interval;
+#X obj 491 318 t f b;
+#X obj 518 342 v currentnote;
+#X obj 491 369 util-interval;
 #X obj 354 329 v tonic;
 #X obj 354 309 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
@@ -204,6 +204,12 @@
 #X obj 191 494 print preval;
 #X obj 279 380 t b b l;
 #X obj 358 537 print after;
+#X obj 193 15 receive fromGUI;
+#X obj 194 40 route list;
+#X obj 194 62 route /keychooser;
+#X obj 194 84 s key;
+#X obj 846 122 r key;
+#X obj 37 42 r beat;
 #X connect 2 0 0 0;
 #X connect 2 0 55 0;
 #X connect 2 1 1 0;
@@ -215,7 +221,9 @@
 #X connect 8 0 26 0;
 #X connect 10 0 4 0;
 #X connect 11 0 12 0;
+#X connect 11 0 69 0;
 #X connect 11 1 12 0;
+#X connect 11 1 69 1;
 #X connect 12 0 5 0;
 #X connect 13 0 14 1;
 #X connect 14 0 70 0;
@@ -273,3 +281,8 @@
 #X connect 80 1 78 0;
 #X connect 80 2 77 2;
 #X connect 80 2 76 0;
+#X connect 82 0 83 0;
+#X connect 83 0 84 0;
+#X connect 84 0 85 0;
+#X connect 86 0 8 0;
+#X connect 87 0 3 0;

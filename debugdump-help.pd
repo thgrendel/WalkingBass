@@ -1,0 +1,14 @@
+#N canvas 439 23 450 300 10;
+#X obj 201 92 v debug;
+#X obj 201 66 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X floatatom 37 67 5 0 0 0 - - -, f 5;
+#X msg 48 91 list a b c d;
+#X obj 37 167 debugdump fromhelp;
+#X msg 56 122 whatsa matter you?;
+#X text 35 26 debugdump outputs any message to the console \, as long
+as a value debug is set and has a non-zero value;
+#X connect 1 0 0 0;
+#X connect 2 0 4 0;
+#X connect 3 0 4 0;
+#X connect 5 0 4 0;

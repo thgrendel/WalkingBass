@@ -1,0 +1,11 @@
+#N canvas 0 22 450 300 10;
+#X obj 9 8 inlet;
+#X obj 54 59 v debug;
+#X obj 9 106 print \$1;
+#X obj 9 83 spigot 0;
+#X obj 54 36 t b;
+#X connect 0 0 3 0;
+#X connect 0 0 4 0;
+#X connect 1 0 3 1;
+#X connect 3 0 2 0;
+#X connect 4 0 1 0;

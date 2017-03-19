@@ -1,4 +1,5 @@
 #N canvas 0 23 526 352 10;
+#X declare -path lib;
 #X obj 14 15 receive fromGUI;
 #X obj 14 38 route list;
 #X obj 14 82 s key;
@@ -20,6 +21,7 @@ f 55;
 #X msg 200 84 0;
 #X msg 247 83 1;
 #X obj 232 125 s durmoll;
+#X obj 360 206 declare -path lib;
 #X connect 0 0 1 0;
 #X connect 1 0 15 0;
 #X connect 6 0 11 0;

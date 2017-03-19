@@ -4,3 +4,5 @@ scratchpad.pd
 .DS_Store
 doublebass/_readme_and_license.txt
 PdWrapper.pd
+*.key
+*.pdf
